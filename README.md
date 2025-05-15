@@ -7,3 +7,7 @@ AMQP (Advanced Message Queuing Protocol) adalah protokol komunikasi yang memungk
 b. What does it mean? guest:guest@localhost:5672 , what is the first guest, and what
 is the second guest, and what is localhost:5672 is for? git\
 guest:guest@localhost:5672 adalah format koneksi ke RabbitMQ, di mana guest pertama adalah username, guest kedua adalah password, localhost menunjukkan server RabbitMQ berjalan di komputer lokal, dan 5672 adalah port standar yang digunakan oleh protokol AMQP. Artinya, aplikasi akan mencoba terhubung ke RabbitMQ di komputer sendiri menggunakan akun default guest.
+
+### Simulation Slow Subscriber
+![Simulation slow subscriber](image/SimulationSlowSubscriber.png)
+Pada komputer saya terdapat sampai 11 queue. Saya menjakankan publisher sebanyak 3 kali secara cepat. Kecepatan pengiriman tidak sebanding dengan kecepatan penerimaan, sehingga membuat pesan tersimpan ke dalam queue terlebih dahulu sebelum diterima oleh subscriber.
