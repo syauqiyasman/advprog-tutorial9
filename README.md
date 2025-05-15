@@ -21,3 +21,7 @@ Dengan jumlah message yang sama dari publisher, dengan memiliki banyak subscribe
 
 ### Simulation Slow Subscriber (Cloud)
 ![Simulation slow subscriber](image/SimulationSlowSubscriberCloud.png)
+
+### Multi Simulation Slow Subscriber (Cloud)
+![Multi simulation slow subscriber monitor cloud](image/MultiSimulationSlowSubscriberMonitorCloud.png)
+![Multi simulation slow subscriber console cloud](image/MultiSimulationSlowSubscriberConsoleCloud.png)
