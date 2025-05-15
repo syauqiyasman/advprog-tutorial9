@@ -11,3 +11,8 @@ guest:guest@localhost:5672 adalah format koneksi ke RabbitMQ, di mana guest pert
 ### Simulation Slow Subscriber
 ![Simulation slow subscriber](image/SimulationSlowSubscriber.png)
 Pada komputer saya terdapat sampai 11 queue. Saya menjakankan publisher sebanyak 3 kali secara cepat. Kecepatan pengiriman tidak sebanding dengan kecepatan penerimaan, sehingga membuat pesan tersimpan ke dalam queue terlebih dahulu sebelum diterima oleh subscriber.
+
+### Multi Simulation Slow Subscriber
+![Multi simulation slow subscriber monitor](image/MultiSimulationSlowSubscriberMonitor.png)
+![Multi simulation slow subscriber console](image/MultiSimulationSlowSubscriberConsole.png)
+Dengan jumlah message yang sama dari publisher, dengan memiliki banyak subscriber, panjang queue tidak sepanjang sebelumnya, hal ini karena message dikomsunsi merata oleh ketiga subscriber. Namun, subscriber jadi tidak menerima keseluruhan message. Yang menjadi masalah di sini adalah ketika kita ingin semua subscriber sama sama menerima pesan yang sama.
