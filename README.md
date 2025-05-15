@@ -16,3 +16,8 @@ Pada komputer saya terdapat sampai 11 queue. Saya menjakankan publisher sebanyak
 ![Multi simulation slow subscriber monitor](image/MultiSimulationSlowSubscriberMonitor.png)
 ![Multi simulation slow subscriber console](image/MultiSimulationSlowSubscriberConsole.png)
 Dengan jumlah message yang sama dari publisher, dengan memiliki banyak subscriber, panjang queue tidak sepanjang sebelumnya, hal ini karena message dikomsunsi merata oleh ketiga subscriber. Namun, subscriber jadi tidak menerima keseluruhan message. Yang menjadi masalah di sini adalah ketika kita ingin semua subscriber sama sama menerima pesan yang sama.
+
+## Bonus
+
+### Simulation Slow Subscriber (Cloud)
+![Simulation slow subscriber](image/SimulationSlowSubscriberCloud.png)
